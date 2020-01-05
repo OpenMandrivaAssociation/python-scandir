@@ -16,14 +16,6 @@ BuildRequires:  python3dist(setuptools)
 scandir, a better directory iterator and faster os.walk() scandir() is a
 directory iteration function like os.listdir(),
 
-%package -n     python-%{pypi_name}
-Summary:        %{summary}
-%{?python_provide:%python_provide python-%{pypi_name}}
-
-%description -n python-%{pypi_name}
-scandir, a better directory iterator and faster os.walk() scandir() is a
-directory iteration function like os.listdir(),
-
 %prep
 %autosetup -n %{pypi_name}-%{version}
 
@@ -39,7 +31,7 @@ rm -rf %{pypi_name}.egg-info
 %check
 %{__python} setup.py test
 
-%files -n python-%{pypi_name}
+%files
 %license LICENSE.txt
 %doc README.rst
 %{python_sitearch}/__pycache__/*
