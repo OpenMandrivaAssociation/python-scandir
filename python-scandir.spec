@@ -33,5 +33,5 @@ rm -rf %{pypi_name}.egg-info
 %doc README.rst
 %{python_sitearch}/__pycache__/*
 %{python_sitearch}/%{pypi_name}.py
-%{python_sitearch}/_%{pypi_name}*.so
+#{python_sitearch}/_%{pypi_name}*.so
 %{python_sitearch}/%{pypi_name}-%{version}-py?.?.egg-info
