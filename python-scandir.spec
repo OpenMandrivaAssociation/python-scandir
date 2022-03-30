@@ -4,7 +4,7 @@
 
 Name:           python-%{pypi_name}
 Version:        1.10.0
-Release:        2
+Release:        3
 Summary:        scandir, a better directory iterator and faster os
 Group:          Development/Python
 License:        New BSD License
@@ -32,7 +32,6 @@ rm -rf %{pypi_name}.egg-info
 %files
 %license LICENSE.txt
 %doc README.rst
-%{python_sitearch}/__pycache__/*
 %{python_sitearch}/%{pypi_name}.py
 #{python_sitearch}/_%{pypi_name}*.so
-%{python_sitearch}/%{pypi_name}-%{version}-py?.?.egg-info
+%{python_sitearch}/%{pypi_name}-%{version}-py*.*.egg-info
