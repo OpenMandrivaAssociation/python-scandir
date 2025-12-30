@@ -4,7 +4,7 @@
 
 Name:           python-%{pypi_name}
 Version:        1.10.0
-Release:        5
+Release:        6
 Summary:        scandir, a better directory iterator and faster os
 Group:          Development/Python
 License:        New BSD License
